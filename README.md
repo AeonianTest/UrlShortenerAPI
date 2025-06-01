@@ -49,5 +49,11 @@ A simple C# .NET Core Web Multi-Tenant URL Shortening Api Service, usable as a b
 | `POST` | `/oauth/refresh`           | Refresh client JWT token.            | `{  }` |
 
 ### URL Shortening endpoints
+| Method | Path                       | Description                          | Request Body Example              |
+| :----- | :--------------------------| :----------------------------------- | :-------------------------------- |
+| `POST` | `/api/shorten`             | Shortens a long URL and returns the short code. | `{ "longUrl": "https://www.example.com/a/very/long/path/to/resource" }` |
 
 ### Redirection endpoint
+| Method | Path                       | Description                          | Request Body Example              |
+| :----- | :--------------------------| :----------------------------------- | :-------------------------------- |
+| `GET`  | `/s/{shortCode}`           | Redirects the browser to the associated URL with the short.    | `(No request body)`               |
