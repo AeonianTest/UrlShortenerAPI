@@ -37,7 +37,8 @@ A simple C# .NET Core Web Multi-Tenant URL Shortening Api Service, usable as a b
 ### Admin endpoints
 | Method | Path                       | Description                          | Request Body Example              |
 | :----- | :--------------------------| :----------------------------------- | :-------------------------------- |
-| `POST` | `/admin/users`             | Creates a new client User account. | `{ "name": "MyWebAppService", "email": "web_app@example.com", "description": "Service for our main website" }` |
+| `POST` | `/admin/users`             | Creates a new client User account. | `{ "name": "MyWebAppService", "password": "Password123", "email": "web_app@example.com", "description": "Service for our main website" }` |
+| `GET`  | `/admin/users/`            | Get a list of all the users.         | (No request body)               |
 | `GET`  | `/admin/users/{id}`        | Get details of a specific client User. | (No request body)               |
 | `PUT`  | `/admin/users/{id}`        | Updates an existing client User account. | `{ "name": "MyUpdatedService" }` |
 | `DELETE` | `/admin/users/{id}`      | Deactivates a client User account. | (No request body)                   |
