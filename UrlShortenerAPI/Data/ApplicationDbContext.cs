@@ -1,6 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using UrlShortenerAPI.Models;
 
+/*
+    Core connection to the database using Entity Framework Core (DB Context)
+    For configuration of database settings, entity mappings and other model rules
+*/
+
 namespace UrlShortenerAPI.Data 
 {
     public class ApplicationDbContext : DbContext

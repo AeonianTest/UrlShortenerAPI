@@ -1,5 +1,10 @@
 using System.ComponentModel.DataAnnotations;
 
+/*
+    Defines the User model for the application and business logic
+    Represents a 'Client' user that requires this API service
+*/
+
 namespace UrlShortenerAPI.Models {
     public class User
     {
